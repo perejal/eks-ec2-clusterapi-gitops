@@ -30,7 +30,7 @@ metadata:
   name: capi-eks-control-plane
   namespace: default
 spec:
-  region: ap-southeast-2
+  region: us-west-2
   sshKeyName: capi-eks
   version: v1.22.6
 ---

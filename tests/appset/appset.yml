@@ -9,10 +9,10 @@ spec:
       repoURL: https://github.com/perejal/eks-ec2-clusterapi-gitops
       revision: main
       directories:
-      - path: '/tests/clusters/*/*'
+      - path: 'tests/clusters/*/*'
   template:
     metadata:
-      name: 'environment-{{path[3]}}-region-{{path[4]}}-app'
+      name: 'environment-{{path[2]}}-region-{{path[3]}}-app'
     spec:
       project: default
       syncPolicy:

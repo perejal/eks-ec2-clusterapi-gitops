@@ -7,7 +7,7 @@ spec:
   generators:
   - git:
       repoURL: https://github.com/perejal/eks-ec2-clusterapi-gitops
-      revision: master
+      revision: main
       directories:
       - path: /tests/clusters/*/*
   template:
@@ -21,7 +21,7 @@ spec:
           selfHeal: true
       source:
         repoURL: https://github.com/perejal/eks-ec2-clusterapi-gitops
-        targetRevision: master
+        targetRevision: main
         path: 'tests/app'
       destination:
         server: https://kubernetes.default.svc
